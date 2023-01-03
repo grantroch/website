@@ -22,7 +22,7 @@ float bilinear(
 #if 1
     float  a = c00 * (1 - tx) + c10 * tx;
     float  b = c01 * (1 - tx) + c11 * tx;
-    return a * (1) - ty) + b * ty;
+    return a * (1 - ty) + b * ty;
 #else
     return (1 - tx) * (1 - ty) * c00 + 
         tx * (1 - ty) * c10 +
